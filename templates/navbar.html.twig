@@ -1,0 +1,66 @@
+
+<nav class="navbar navbar-expand-lg " style="background:#24468B; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; padding: 10px; margin: auto;">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="{{path('app_home')}}" >
+			<img src="{{asset('img/vfobtic.png')}}" width="64" alt="">
+			<span class="title" style="margin-right: 5px; color:white">Voltaire Foundtion</span>
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav m-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a
+						{% if "home" in route %}
+						class="nav-link active"
+						{% else %}
+						class="nav-link"
+						{% endif %}
+						href="{{path('app_home')}}">HOME</a>
+				</li>
+				<li class="nav-item">
+					<a
+						{% if "book" in route %}
+						class="nav-link active"
+						{% else %}
+						class="nav-link"
+						{% endif %}
+						href="{{path('app_book')}}">BOOK</a>
+				</li>
+				<li class="nav-item">
+					<a
+						{% if "author" in route %}
+						class="nav-link active"
+						{% else %}
+						class="nav-link"
+						{% endif %}
+						href="{{path('app_author')}}">CONTRIBUTOR</a>
+				</li>
+				{% if app.user and app.user.roles[0] == 'ROLE_ADMIN' %}
+				<li class="nav-item">
+					<a
+						{% if "user" in route %}
+						class="nav-link active"
+						{% else %}
+						class="nav-link"
+						{% endif %}
+						href="{{path('app_user')}}">USER</a>
+				</li>
+				{% endif %}
+				
+
+			</ul>
+			<ul class="navbar-nav  mb-2 mb-lg-0">
+				<div class="logout">
+					<li class="nav-item account text-light">{{app.user.email}}</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{{path('app_logout')}}"><i class="text-light fa fa-sign-out" style="font-size: 20px;"></i></a>
+					</li>
+				</div>
+			</ul>
+
+		</div>
+	</div>
+</nav>

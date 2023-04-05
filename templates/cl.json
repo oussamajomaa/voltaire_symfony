@@ -1,0 +1,270 @@
+[
+    {
+        "category": "Belles-Lettres",
+        "description": "Grammaire"
+    },
+    {
+        "category": "Belles-Lettres",
+        "description": "Philologie"
+    },
+    {
+        "category": "Belles-Lettres",
+        "description": "Poétique"
+    },
+    {
+        "category": "Belles-Lettres",
+        "description": "Poésie française"
+    },
+    {
+        "category": "Belles-Lettres",
+        "description": "Poésie italienne"
+    },
+    {
+        "category": "Belles-Lettres",
+        "description": "Poésie espagnole, hollandaise et anglaise"
+    },
+    {
+        "category": "Belles-Lettres",
+        "description": "Théâtre français"
+    },
+    {
+        "category": "Belles-Lettres",
+        "description": "Poésie dramatique étrangère"
+    },
+    {
+        "category": "Belles-Lettres",
+        "description": "Poésie dramatique étrangère"
+    },
+    {
+        "category": "Belles-Lettres",
+        "description": "Théâtre italien"
+    },
+    {
+        "category": "Belles-Lettres",
+        "description": "Théâtre de la Foire"
+    },
+    {
+        "category": "Belles-Lettres",
+        "description": "Théâtre d’autres pays"
+    },
+    {
+        "category": "Belles-Lettres",
+        "description": "Mythologie"
+    },
+    {
+        "category": "Belles-Lettres",
+        "description": "Polygraphie"
+    },
+    {
+        "category": "Belles-Lettres",
+        "description": "Epistolaires"
+    },
+    {
+        "category": "Belles-Lettres",
+        "description": "Rhétorique"
+    },
+    {
+        "category": "Belles-Lettres",
+        "description": "Romans"
+    },
+    {
+        "category": "Histoire",
+        "description": "Histoire Moderne"
+    },
+    {
+        "category": "Histoire",
+        "description": "Chronologie"
+    },
+    {
+        "category": "Histoire",
+        "description": "Géographie"
+    },
+    {
+        "category": "Histoire",
+        "description": "Histoire de l'Asie"
+    },
+    {
+        "category": "Histoire",
+        "description": "Histoire d'Afrique"
+    },
+    {
+        "category": "Histoire",
+        "description": "Histoire de l'Amérique"
+    },
+    {
+        "category": "Histoire",
+        "description": "Histoire de France"
+    },
+    {
+        "category": "Histoire",
+        "description": "Histoire ecclésiastique"
+    },
+    {
+        "category": "Histoire",
+        "description": "Histoire d’Allemagne"
+    },
+    {
+        "category": "Histoire",
+        "description": "Histoire d’Angleterre"
+    },
+    {
+        "category": "Histoire",
+        "description": "Histoire d'Espagne"
+    },
+    {
+        "category": "Histoire",
+        "description": "Histoire de Portugal"
+    },
+    {
+        "category": "Histoire",
+        "description": "Histoire d’Italie"
+    },
+    {
+        "category": "Histoire",
+        "description": "Histoire des Pays Septentrionaux"
+    },
+    {
+        "category": "Histoire",
+        "description": "Histoire des Pays-Bas"
+    },
+    {
+        "category": "Histoire",
+        "description": "Histoire Orientale"
+    },
+    {
+        "category": "Histoire",
+        "description": "Histoire des Turcs"
+    },
+    {
+        "category": "Histoire",
+        "description": "Histoire profane des monarchies anciennes"
+    },
+    {
+        "category": "Histoire",
+        "description": "Histoire universelle"
+    },
+    {
+        "category": "Histoire",
+        "description": "Voyages"
+    },
+    {
+        "category": "Histoire",
+        "description": "Paralipomènes historiques"
+    },
+    {
+        "category": "Histoire",
+        "description": "Antiquités"
+    },
+    {
+        "category": "Histoire",
+        "description": "Histoire littéraire"
+    },
+    {
+        "category": "Histoire",
+        "description": "Vies des hommes illustres"
+    },
+    {
+        "category": "Jurisprudence",
+        "description": "Droit canonique"
+    },
+    {
+        "category": "Jurisprudence",
+        "description": "Droit civil"
+    },
+    {
+        "category": "Sciences et Arts",
+        "description": "Arts"
+    },
+    {
+        "category": "Sciences et Arts",
+        "description": "Architecture"
+    },
+    {
+        "category": "Sciences et Arts",
+        "description": "Art du dessin et de la peinture"
+    },
+    {
+        "category": "Sciences et Arts",
+        "description": "Art militaire"
+    },
+    {
+        "category": "Sciences et Arts",
+        "description": "Arts mécaniques, appelés Métiers"
+    },
+    {
+        "category": "Sciences et Arts",
+        "description": "Histoire naturelle"
+    },
+    {
+        "category": "Sciences et Arts",
+        "description": "Agriculture"
+    },
+    {
+        "category": "Sciences et Arts",
+        "description": "Botanique"
+    },
+    {
+        "category": "Sciences et Arts",
+        "description": "Histoire naturelle des animaux"
+    },
+    {
+        "category": "Sciences et Arts",
+        "description": "Astronomie"
+    },
+    {
+        "category": "Sciences et Arts",
+        "description": "Histoire naturelle des Eléments"
+    },
+    {
+        "category": "Sciences et Arts",
+        "description": "Mathématique"
+    },
+    {
+        "category": "Sciences et Arts",
+        "description": "Médecine"
+    },
+    {
+        "category": "Sciences et Arts",
+        "description": "Philosophie"
+    },
+    {
+        "category": "Sciences et Arts",
+        "description": "Économie"
+    },
+    {
+        "category": "Sciences et Arts",
+        "description": "Politique"
+    },
+    {
+        "category": "Sciences et Arts",
+        "description": "Physique"
+    },
+    {
+        "category": "Théologie",
+        "description": "Écriture Sainte"
+    },
+    {
+        "category": "Théologie",
+        "description": "Liturgies"
+    },
+    {
+        "category": "Théologie",
+        "description": "Conciles"
+    },
+    {
+        "category": "Théologie",
+        "description": "Saints Pères"
+    },
+    {
+        "category": "Théologie",
+        "description": "Théologiens"
+    },
+    {
+        "category": "Undetermined",
+        "description": "Uncategorizable"
+    },
+    {
+        "category": "Undetermined",
+        "description": "Unknown"
+    }
+]

@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Voltaire Foundation{% endblock %}
+
+{% block body %}
+
+<div class="content">
+
+    {# Flashes Messages #}
+    {% include "/_partial/flash.html.twig" %}
+    {# Dialog Box Confirm Delete #}
+    {% include "/_partial/confirm.html.twig" with {'value':"user"} %}
+
+
+
+    {# Page Title + add button #}
+    <div class="d-flex justify-content-between">
+        <h3 class="title">USERS</h3>
+        <a href="{{path('app_user_register')}}" class="btn btn-primary btn-sm">Add user</a>
+    </div>
+
+    <div class="m-auto col col-lg-6 " >
+
+
+        {# Table content data #}
+        <table class="table" style="table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th style="width: 48%;">EMAIL</th>
+                    <th style="width: 48%;">ROLES</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+
+
+                {% for user in users %}
+                {% if user.email != app.user.email %}
+
+                <tr class="tr-row-hover">
+                    <td data-label="EMAIL">{{user.email}}</td>
+                    <td data-label="ROLES">{{user.roles[0]}}</td>
+                    <td class="">
+                        <div class="dropdown ">
+                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="border:none; background:transparent">
+                                ...
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="{{path('app_user_edit',{'id':user.id})}}">Edit</a>
+                                </li>
+                                <li><a class="dropdown-item delete-button"
+                                        href="{{path('app_user_delete',{'id':user.id})}}">Delete</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+
+                </tr>
+                {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+        {# Pagination #}
+        {{ knp_pagination_render(users,'paginations/sliding.html.twig') }}
+    </div>
+</div>
+
+{% endblock %}

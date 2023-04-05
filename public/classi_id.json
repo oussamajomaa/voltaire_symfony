@@ -1,0 +1,535 @@
+[
+  {
+    "id":1,
+    "category":"Belles-Lettres",
+    "description":"Bibliographie"
+  },
+  {
+    "id":2,
+    "category":"Belles-Lettres",
+    "description":"Grammaires & dictionnaires"
+  },
+  {
+    "id":3,
+    "category":"Belles-Lettres",
+    "description":"Philologie"
+  },
+  {
+    "id":4,
+    "category":"Belles-Lettres",
+    "description":"Poétique"
+  },
+  {
+    "id":5,
+    "category":"Belles-Lettres",
+    "description":"Polygraphes anciens & modernes"
+  },
+  {
+    "id":6,
+    "category":"Belles-Lettres",
+    "description":"Rhétorique"
+  },
+  {
+    "id":7,
+    "category":"Belles-Lettres",
+    "description":"Romans"
+  },
+  
+  {
+    "id":8,
+    "category":"Histoire",
+    "description":"Atlas"
+  },
+  {
+    "id":9,
+    "category":"Histoire",
+    "description":"Cartes géographiques"
+  },
+  {
+    "id":10,
+    "category":"Histoire",
+    "description":"Chronologie"
+  },
+  {
+    "id":11,
+    "category":"Histoire",
+    "description":"Franc-maçonnerie"
+  },
+  {
+    "id":12,
+    "category":"Histoire",
+    "description":"Géographie"
+  },
+  {
+    "id":13,
+    "category":"Histoire",
+    "description":"Histoire Asiatique"
+  },
+  {
+    "id":14,
+    "category":"Histoire",
+    "description":"Histoire d'Afrique"
+  },
+  {
+    "id":15,
+    "category":"Histoire",
+    "description":"Histoire de l'Amérique"
+  },
+  {
+    "id":16,
+    "category":"Histoire",
+    "description":"Histoire de la Grèce asiatique"
+  },
+  {
+    "id":17,
+    "category":"Histoire",
+    "description":"Histoire de France"
+  },
+  {
+    "id":18,
+    "category":"Histoire",
+    "description":"Histoire de France sous des règnes particulières"
+  },
+  {
+    "id":19,
+    "category":"Histoire",
+    "description":"Histoire des Villes & Provinces de France"
+  },
+  {
+    "id":20,
+    "category":"Histoire",
+    "description":"Histoire générale de France"
+  },
+  {
+    "id":21,
+    "category":"Histoire",
+    "description":"Préliminaires de l'Histoire de France"
+  },
+  {
+    "id":22,
+    "category":"Histoire",
+    "description":"Histoire ecclésiastique"
+  },
+  {
+    "id":23,
+    "category":"Histoire",
+    "description":"Actes des Martyrs, passions, & martyrologes"
+  },
+  {
+    "id":24,
+    "category":"Histoire",
+    "description":"Histoire des conciles"
+  },
+  {
+    "id":25,
+    "category":"Histoire",
+    "description":"Histoire des Inquisitions"
+  },
+  {
+    "id":26,
+    "category":"Histoire",
+    "description":"Histoire des ordres militaires & de Chevalerie"
+  },
+  {
+    "id":27,
+    "category":"Histoire",
+    "description":"Histoire des Papes, &c."
+  },
+  {
+    "id":28,
+    "category":"Histoire",
+    "description":"Histoire ecclésiastique générale"
+  },
+  {
+    "id":29,
+    "category":"Histoire",
+    "description":"Histoire générale des Religions, sectes & hérésies"
+  },
+  {
+    "id":30,
+    "category":"Histoire",
+    "description":"Histoire monastique"
+  },
+  {
+    "id":31,
+    "category":"Histoire",
+    "description":"Histoire européen divers"
+  },
+  {
+    "id":32,
+    "category":"Histoire",
+    "description":"Histoire d'Allemagne"
+  },
+  {
+    "id":33,
+    "category":"Histoire",
+    "description":"Histoire d'Angleterre, d'Ecosse & d'Irlande"
+  },
+  {
+    "id":34,
+    "category":"Histoire",
+    "description":"Histoire d'Espagne & de Portugal"
+  },
+  {
+    "id":35,
+    "category":"Histoire",
+    "description":"Histoire d'Italie"
+  },
+  {
+    "id":36,
+    "category":"Histoire",
+    "description":"Histoire des Pays Septentrionaux"
+  },
+  {
+    "id":37,
+    "category":"Histoire",
+    "description":"Histoire des Pays-Bas"
+  },
+  {
+    "id":38,
+    "category":"Histoire",
+    "description":"Histoire des Provinces-Unies des Pays-Bas"
+  },
+  {
+    "id":39,
+    "category":"Histoire",
+    "description":"Histoire des Suisses, &c."
+  },
+  {
+    "id":40,
+    "category":"Histoire",
+    "description":"Histoire Orientale"
+  },
+  {
+    "id":41,
+    "category":"Histoire",
+    "description":"Histoire profane"
+  },
+  {
+    "id":42,
+    "category":"Histoire",
+    "description":"Histoire Byzantine"
+  },
+  {
+    "id":43,
+    "category":"Histoire",
+    "description":"Histoire des juifs"
+  },
+  {
+    "id":44,
+    "category":"Histoire",
+    "description":"Histoire des monarchies anciennes, &c."
+  },
+  {
+    "id":45,
+    "category":"Histoire",
+    "description":"Histoire Grecque"
+  },
+  {
+    "id":46,
+    "category":"Histoire",
+    "description":"Histoire Romaine"
+  },
+  {
+    "id":47,
+    "category":"Histoire",
+    "description":"Histoire universelle & particulière"
+  },
+  {
+    "id":48,
+    "category":"Histoire",
+    "description":"Voyages"
+  },
+  {
+    "id":49,
+    "category":"Histoire",
+    "description":"aaaaaaaaa"
+  },
+     
+  {
+    "id":50,
+    "category":"Jurisprudence",
+    "description":"Ancien Droit des Grecs & des Romains"
+  },
+  {
+    "id":51,
+    "category":"Jurisprudence",
+    "description":"Droit canonique"
+  },
+  {
+    "id":52,
+    "category":"Jurisprudence",
+    "description":"Droit civil, Droit de la Nature & des Gens, & droit public"
+  },
+  {
+    "id":53,
+    "category":"Jurisprudence",
+    "description":"Droit étranger"
+  },
+  {
+    "id":54,
+    "category":"Jurisprudence",
+    "description":"Droit français"
+  },
+  {
+    "id":55,
+    "category":"Jurisprudence",
+    "description":"Œuvres héraldiques, Généalogiques &c."
+  },
+  {
+    "id":56,
+    "category":"Arts et sciences",
+    "description":"Art pyrotechnique, de la Fonderie, de la Verrerie, &c."
+  },
+  {
+    "id":57,
+    "category":"Arts et sciences",
+    "description":"Arts"
+  },
+  {
+    "id":58,
+    "category":"Arts et sciences",
+    "description":"Architecture"
+  },
+  {
+    "id":59,
+    "category":"Arts et sciences",
+    "description":"Art de la peinture"
+  },
+  {
+    "id":60,
+    "category":"Arts et sciences",
+    "description":"Art gymnastique, de la chasse, de la Pêche"
+  },
+  {
+    "id":61,
+    "category":"Arts et sciences",
+    "description":"Art militaire"
+  },
+  {
+    "id":62,
+    "category":"Arts et sciences",
+    "description":"Arts mécaniques, vulgairement appelés Métiers"
+  },
+  {
+    "id":63,
+    "category":"Arts et sciences",
+    "description":"Dictionnaires des Arts, &c."
+  },
+  {
+    "id":64,
+    "category":"Arts et sciences",
+    "description":"Jeux"
+  },
+  {
+    "id":65,
+    "category":"Arts et sciences",
+    "description":"Histoire naturelle"
+  },
+  {
+    "id":66,
+    "category":"Arts et sciences",
+    "description":"Agriculture & Botanique, &c."
+  },
+  {
+    "id":67,
+    "category":"Arts et sciences",
+    "description":"Histoire naturelle des animaux, oiseaux, poissons, insectes, &c."
+  },
+  {
+    "id":68,
+    "category":"Arts et sciences",
+    "description":"Histoire naturelle des choses extraordinaires, monstres, prodiges, &c."
+  },
+  {
+    "id":69,
+    "category":"Arts et sciences",
+    "description":"Histoire naturelle des différents pays"
+  },
+  {
+    "id":70,
+    "category":"Arts et sciences",
+    "description":"Histoire naturelle des Elémens, Métaux, Minéraux, Pierres, &c."
+  },
+  {
+    "id":71,
+    "category":"Arts et sciences",
+    "description":"Mélanges d'histoire naturelle"
+  },
+  {
+    "id":72,
+    "category":"Arts et sciences",
+    "description":"Mathématique"
+  },
+  {
+    "id":73,
+    "category":"Arts et sciences",
+    "description":"Astrologie"
+  },
+  {
+    "id":74,
+    "category":"Arts et sciences",
+    "description":"Géométrie"
+  },
+  {
+    "id":75,
+    "category":"Arts et sciences",
+    "description":"Optique, Statique, Hydraulique, Mécanique & Musique"
+  },
+  {
+    "id":76,
+    "category":"Arts et sciences",
+    "description":"Médecine, Chirurgie"
+  },
+  {
+    "id":77,
+    "category":"Arts et sciences",
+    "description":"Chirurgie & anatomie"
+  },
+  {
+    "id":78,
+    "category":"Arts et sciences",
+    "description":"Chymie"
+  },
+  {
+    "id":79,
+    "category":"Arts et sciences",
+    "description":"Introductions, Cours, & Dictionnaires de Médecine"
+  },
+  {
+    "id":80,
+    "category":"Arts et sciences",
+    "description":"Médecins anciens & modernes, &c."
+  },
+  {
+    "id":81,
+    "category":"Arts et sciences",
+    "description":"Pharmacie"
+  },
+  {
+    "id":82,
+    "category":"Arts et sciences",
+    "description":"Traités de la santé, des moyens de se prolonger la vie, &c."
+  },
+  {
+    "id":83,
+    "category":"Arts et sciences",
+    "description":"Métaphysique"
+  },
+  {
+    "id":84,
+    "category":"Arts et sciences",
+    "description":"De Dieu, de son existence, de sa providence"
+  },
+  {
+    "id":85,
+    "category":"Arts et sciences",
+    "description":"De l' me, de son immortalité, de l'esprit de l'homme"
+  },
+  {
+    "id":86,
+    "category":"Arts et sciences",
+    "description":"Traité des Esprits, de la Cabale, de la Mage, des Démons"
+  },
+  {
+    "id":87,
+    "category":"Arts et sciences",
+    "description":"Philosophie"
+  },
+  {
+    "id":88,
+    "category":"Arts et sciences",
+    "description":"Commerce, Finances, Monnaies"
+  },
+  {
+    "id":89,
+    "category":"Arts et sciences",
+    "description":"Économique"
+  },
+  {
+    "id":90,
+    "category":"Arts et sciences",
+    "description":"Logique et morale"
+  },
+  {
+    "id":91,
+    "category":"Arts et sciences",
+    "description":"Philosophes anciens"
+  },
+  {
+    "id":92,
+    "category":"Arts et sciences",
+    "description":"Philosophes modernes"
+  },
+  {
+    "id":93,
+    "category":"Arts et sciences",
+    "description":"Politique"
+  },
+  {
+    "id":94,
+    "category":"Arts et sciences",
+    "description":"Physique"
+  },
+  {
+    "id":95,
+    "category":"Arts et sciences",
+    "description":"Théologie"
+  },
+  {
+    "id":96,
+    "category":"Arts et sciences",
+    "description":"Ascétiques"
+  },
+  {
+    "id":97,
+    "category":"Arts et sciences",
+    "description":"Catéchétiques"
+  },
+  {
+    "id":98,
+    "category":"Arts et sciences",
+    "description":"Diverses œuvres théologiques"
+  },
+  {
+    "id":99,
+    "category":"Arts et sciences",
+    "description":"La Sainte Bible & commentaires"
+  },
+  {
+    "id":100,
+    "category":"Arts et sciences",
+    "description":"Liturgies & conciles"
+  },
+  {
+    "id":101,
+    "category":"Arts et sciences",
+    "description":"Théologie hétérodoxe"
+  },
+  {
+    "id":102,
+    "category":"Arts et sciences",
+    "description":"Théologie parénétique, ou des sermons"
+  },
+  {
+    "id":103,
+    "category":"Arts et sciences",
+    "description":"Théologie polémique"
+  },
+  {
+    "id":104,
+    "category":"Arts et sciences",
+    "description":"Vies des Saints"
+  },
+  {
+    "id":105,
+    "category":"Undetermined",
+    "description": "Uncategorizable"
+  },
+  {
+    "id":106,
+    "category":"Undetermined",
+    "description": "Unknown"
+  }
+
+]

@@ -1,0 +1,23 @@
+{# Search Form By first_name or last_name #}
+{% set search = app.session.get('search') %}
+<form class="search" action="{{action}}">
+    <button type="submit" class="btn-icon-search">
+        <i class="fa fa-search"></i>
+    </button>
+    <input type="text" placeholder="{{placeholder}}" onkeyup="onChangeInput()" name="search" value="{{search}}">
+
+    <a href="{{path(route)}}" class="btn-icon-clear">
+        <i class="fa fa-close"></i>
+    </a>
+</form>
+<hr>
+
+<script>
+    // Display and hide clear icon if input is empty
+    function onChangeInput(){
+        let input = document.querySelector('.search input').value
+        if (input.length !=0) document.querySelector('.btn-icon-clear').style.display="inline"
+        else document.querySelector('.btn-icon-clear').style.display="none"
+    }
+    onChangeInput()
+</script>

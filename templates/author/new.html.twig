@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Add or Edit contributor!{% endblock %}
+
+{% block body %}
+<div class="content">
+    {# Flashes Messages #}
+    {% include "/_partial/flash.html.twig" %}
+
+    {# Search Form By first_name or last_name #}
+    {% include "/_partial/search.html.twig" with {
+                                                    "route":"app_author_clear",
+                                                    "action":"/author",
+                                                    "placeholder":"Search by first name or last name" 
+                                                } 
+    %}
+    <h3 class="title">Add or edit a contributor</h3>
+        
+        {{ form_start(form) }}
+        {{ form_row(form.first_name) }}
+        {{ form_row(form.last_name) }}
+        {{ form_row(form.link_viaf) }}
+        {{ form_row(form.notes) }}
+        <button class="btn btn-primary btn-sm d-block ml-auto">Save</button>
+        {{ form_end(form) }}
+    
+</div>
+
+{% endblock %}

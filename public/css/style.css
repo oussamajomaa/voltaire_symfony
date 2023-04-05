@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+label,
+input,
+textarea,
+select,
+p,
+a,
+ul,
+li,
+table,
+tr,
+th,
+td,
+i {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    color: #3f4650;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background: #0D47A1;
+    border-color: #0D47A1;
+}
+
+.alert {
+    color: rgb(73, 73, 73);
+}
+
+
+
+.content {
+    padding: 20px;
+    margin-top: 10px;
+    position: relative;
+    box-sizing: border-box !important;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sub-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav .active {
+    font-weight: bold;
+    color:white !important;
+}
+
+.nav-link:hover {
+    
+    color:yellow;
+}
+
+
+
+/* remove shadow from input in focus */
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none;
+}
+
+.form-control {
+    font-size: 14px;
+    color: #3f4650;
+    height: 32px;
+}
+
+#book_digital_voltaire,
+#book_notes {
+    height: auto !important;
+}
+
+/* select2 */
+.select2-selection,
+.select2-selection--multiple {
+    border: 1px solid #dee2e6 !important;
+}
+
+
+
+#book_status, #book_type_document{
+    height: 32px ;
+}
+
+
+/* form style */
+form.search button,
+form.search a {
+    background: transparent;
+    border: none;
+    margin-top: 5px;
+    width: 20px;
+    padding: 0;
+}
+
+
+
+form.search input[type=text] {
+    padding: 5px 10px;
+    width: 300px;
+    /* border: none; */
+    outline: none;
+    border: 1px gray solid;
+    border-radius: 5px;
+}
+
+form.search {
+    position: relative;
+}
+
+
+
+.btn-icon-clear {
+    position: absolute;
+    left: 305px;
+    display: none;
+}
+
+
+
+table .action {
+    border-radius: 5px;
+    background: transparent;
+    border: none;
+}
+
+/* supprmer la flèsh du dropdown */
+table .dropdown-toggle:after {
+    display: none !important;
+}
+
+nav .pagination {
+    float: right;
+}
+
+nav .pagination .page-item .page-link {
+    font-size: 12px !important;
+}
+
+nav .pagination .active>.page-link {
+    background: #0D47A1;
+    color: white;
+}
+
+nav .pagination .page-link {
+    color: #0D47A1;
+}
+
+nav .pagination .active {
+    background-color: transparent;
+}
+
+th i {
+    font-size: 12px !important;
+    font-weight: bolder !important;
+}
+
+th.name {
+    width: 20%;
+}
+
+.nav-link{
+    color:white
+}
+
+
+/* Div confirm delete */
+.confirm {
+    position: absolute;
+    left: calc(50% - 250px);
+    top:25%;
+    background: rgb(255, 255, 255);
+    width: 500px;
+    z-index: 100;
+    /* display: none; */
+    transition:top .5s ease-in-out;
+}
+
+.myModal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #666666a4;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 10
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+@media (max-width: 991px) {
+    .table thead {
+        display: none;
+    }
+
+    .table tr {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .table td {
+        display: block;
+        text-align: right;
+    }
+
+    .table td:before {
+        content: attr(data-label);
+        float: left;
+        text-align: left;
+        font-weight: bold;
+        width: 150px;
+    }
+
+    .logout .account {
+        display: none;
+    }
+
+
+
+}

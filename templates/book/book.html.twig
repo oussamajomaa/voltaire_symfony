@@ -1,0 +1,162 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Voltaire Foundation{% endblock %}
+
+{% block body %}
+<div class="content">
+    {# Flashes Messages #}
+    {% include "/_partial/flash.html.twig" %}
+
+    {# Dialog Box Confirm Delete #}
+    {% include "/_partial/confirm.html.twig" with {'value': 'book'} %}
+    
+    {# Search Form By first_name or last_name #}
+    {% include "/_partial/search.html.twig" with {"route":"app_book_clear", "action":"/book", "placeholder":"Search by title, source or notes"} %}
+
+    {# <div class="d-flex justify-content-between">
+        <div>
+            <input type="radio" name="search" id="title_source_notes" checked>
+            <label for="title_source_notes" style="margin-right: 10px;">Search by title or source or notes</label>
+            <input type="radio" name="search" id="classification">
+            <label for="classification">Search by classification</label>
+        </div>
+    
+        
+        <span id="search_title">
+            {% include "/_partial/search.html.twig" with {"route":"app_book_clear", "action":"/book", "placeholder":"Search by title, source or notes"} %}
+        </span>
+        <span style="display: none;" id="search_classification">
+            {% include "/_partial/search.html.twig" with {"route":"app_book_clear", "action":"/book/1/asc/classification", "placeholder":"Search by classification"} %}
+        </span>
+    </div>
+    <hr> #}
+    {# Page Title + add button #}
+    <div class="d-flex justify-content-between">
+        <h3 class="title">Book</h3>
+        <a href="{{path('app_book_new')}}" class="btn btn-primary btn-sm">Add book</a>
+    </div>
+    
+    {# Table content data #}
+    <table class="table" style="table-layout: fixed;">
+        <thead>
+            <tr>
+                <th style="position:relative; width:30%" class="name">Title
+                    <a href="{{path('app_book', {'order':'ASC', 'column':'title'})}}">
+                        <i class='fa fa-chevron-up' style="position: absolute; bottom:18px; left:60px;"></i></a>
+                    <a href="{{path('app_book', {'order':'DESC', 'column':'title'})}}">
+                        <i class='fa fa-chevron-down' style="position: absolute; bottom:5px; left:60px;"></i></a>   
+                </th>
+                <th style="width: 9%;">Publisher</th>
+                <th style="width: 9%;">Publication place</th>
+                <th style="width: 9%;">Publication date</th>
+                <th style="width: 9%; position:relative;">Source
+                    <a href="{{path('app_book', {'order':'ASC', 'column':'source'})}}">
+                        <i class='fa fa-chevron-up' style="position: absolute; bottom:18px; left:60px;"></i></a>
+                    <a href="{{path('app_book', {'order':'DESC', 'column':'source'})}}">
+                        <i class='fa fa-chevron-down' style="position: absolute; bottom:5px; left:60px;"></i></a> 
+                </th>
+                <th class="name" style="width: 15%; ">Classification</th>
+                <th style="position:relative; width: 15%; " class="name">Notes
+                    <a href="{{path('app_book', {'order':'ASC', 'column':'notes'})}}">
+                        <i class='fa fa-chevron-up' style="position: absolute; bottom:18px; left:60px;"></i></a>
+                    <a href="{{path('app_book', {'order':'DESC', 'column':'notes'})}}">
+                        <i class='fa fa-chevron-down' style="position: absolute; bottom:5px; left:60px;"></i></a>
+                </th>
+                <th style="width: 4%;"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+            <tr class="tr-row-hover">
+                <td data-label="Title" style="white-space:nowrap;overflow: hidden; " class="border">{{book.title}}</td>
+                <td data-label="Publisher" style="white-space:nowrap;overflow: hidden; " class="border">
+                    {% if book.publisher|length == 0 %}
+                    &nbsp;
+                    {% else %}
+                    {{book.publisher}}
+                    {% endif %}
+                </td>
+                <td data-label="Publication place" style="white-space:nowrap;overflow: hidden; " class="border">
+                    {% if book.publicationPlace|length == 0 %}
+                    &nbsp;
+                    {% else %}
+                    {{book.publicationPlace}}
+                    {% endif %}
+                </td>
+                <td data-label="Publication date" style="white-space:nowrap;overflow: hidden;  " class="border">
+                    {% if book.publicationDate|length == 0 %}
+                    &nbsp;
+                    {% else %}
+                    {{book.publicationDate}}
+                    {% endif %}
+                </td>
+               
+                <td data-label="Source" style="white-space:nowrap;overflow: hidden; " class="border">
+                    {% if book.source|length == 0 %}
+                    &nbsp;
+                    {% else %}
+                    {{book.source}}
+                    {% endif %}
+                </td>
+                <td data-label="Classification" style="white-space:nowrap;overflow: hidden; " class="border">
+                    {% if book.classification|length == 0 %}
+                    &nbsp;
+                    {% else %}
+
+                    {% for item in book.classification %}
+                    <p>- {{item.description}}</p>
+                    {% endfor %}
+
+                    {% endif %}
+                </td>
+                <td data-label="Notes" style="white-space:nowrap;overflow: hidden; " class="border">
+                    {% if book.notes|length == 0 %}
+                    &nbsp;
+                    {% else %}
+                    {{book.notes}}
+                    {% endif %}
+                </td>
+                <td class="action-button border">
+                    <div class="dropdown d-flex justify-content-end">
+                        <button class="dropdown-toggle action" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ...
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="{{path('app_book_edit', {'id':book.id})}}">Edit</a>
+                            {# <a class="dropdown-item delete-button"
+                                href="{{path('app_book_delete', {'id':book.id})}}">Delete</a> #}
+
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {# Pagination #}
+    {{ knp_pagination_render(books,'paginations/sliding.html.twig') }}
+</div>
+
+</div>
+
+<script>
+    let classification = document.getElementById('classification')
+    let title_source_notes = document.getElementById('title_source_notes')
+    classification.addEventListener('click', function(){
+        
+            document.getElementById('search_classification').style.display='inline'
+            document.getElementById('search_title').style.display='none'
+        
+    })
+    title_source_notes.addEventListener('click', function(){
+        
+            document.getElementById('search_classification').style.display='none'
+            document.getElementById('search_title').style.display='inline'
+       
+    })
+   
+</script>
+
+{% endblock %}
+

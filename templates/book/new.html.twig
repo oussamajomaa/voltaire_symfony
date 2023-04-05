@@ -1,0 +1,145 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Voltaire Foundation{% endblock %}
+
+{% block body %}
+<div class="content new-book">
+    {# Search Form By title #}
+    {% include "/_partial/search.html.twig" with {"route":"app_book_clear","action":"/book", "placeholder":"Search by title"} %}
+    <h3 class="title">Add or edit a book</h3>
+
+    {{ form_start(form) }}
+
+    <div class="border bg-light p-3 mb-3">
+        <div class="row">
+            {{ form_row(form.title) }}
+        </div>
+    </div>
+        <h4 class="sub-title">Contributors</h4>
+        <div class="border bg-light p-3 mb-3">
+            <div class="row">
+                <div class="col">
+                    {{ form_row(form.author, {'attr':{'class':'contributor'}}) }}
+                </div>
+                <div class="col">
+                    {{ form_row(form.editor, {'attr':{'class':'contributor'}}) }}
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    {{ form_row(form.copyst, {'attr':{'class':'contributor'}}) }}
+                </div>
+                <div class="col">
+                    {{ form_row(form.translator, {'attr':{'class':'contributor'}}) }}
+                </div>
+            </div>
+        </div>
+
+        <h4 class="sub-title">Publication</h4>
+        <div class="border bg-light p-3 mb-3">
+            <div class="row">
+                <div class="col-md">
+                    {{ form_row(form.publisher) }}
+                </div>
+                <div class="col-md">
+                    {{ form_row(form.publisher_stated) }}
+                </div>
+                <div class="col-md">
+                    {{ form_row(form.publication_place) }}
+                </div>
+                <div class="col-md">
+                    {{ form_row(form.publication_date) }}
+                </div>
+                <div class="col-md">
+                    {{ form_row(form.publication_place_stated) }}
+                </div>
+                <div class="col-md">
+                    {{ form_row(form.publication_date_stated) }}
+                </div>
+            </div>
+        </div>
+        <div class="border bg-light p-3 mb-3">
+            <div class="row">
+                <div class="col-md">
+                    {{ form_row(form.type_document) }}
+                </div>
+                <div class="col-md">
+                    {{ form_row(form.status) }}
+                </div>
+                <div class="col-md">
+                    {{ form_row(form.multivolume) }}
+                </div>
+                <div class="col-md">
+                    {{ form_row(form.volume, {'attr':{'min':0}}) }}
+                </div>
+                <div class="col-md">
+                    {{ form_row(form.vol_number, {'attr':{'min':0}}) }}
+                </div>
+                <div class="col-md">
+                    {{ form_row(form.source) }}
+                </div>
+                <div class="col-md">
+                    {{ form_row(form.marginalia) }}
+                </div>
+            </div>
+        </div>
+
+        <div class="border bg-light p-3 mb-3">
+            <div class="row">
+                <div class="col-md">
+                    {{ form_row(form.library) }}
+                </div>
+                <div class="col-md">
+                    {{ form_row(form.cote) }}
+                </div>
+                <div class="col-md">
+                    {{ form_row(form.provenance) }}
+                </div>
+                <div class="col-md">
+                    {{ form_row(form.ferney) }}
+                </div>
+                <div class="col-md col">
+                    {{ form_row(form.external_resource) }}
+                </div>
+                <div class="col-md">
+                    {{ form_row(form.pot_pourri, {'attr':{'min':0}}) }}
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="border bg-light p-3 mb-3">
+            <div class="row">
+                <div class="col-md">
+                    {{ form_row(form.classification, {'attr':{'class':'classification'}}) }}
+                </div>
+                <div class="col-md">
+                    {{ form_row(form.digital_voltaire) }}
+                </div>
+                <div class="col-md">
+                    {{ form_row(form.notes) }}
+                </div>
+            </div>
+        </div>
+       
+        <button class="btn btn-primary btn-sm d-block ml-auto">Save</button>
+        {{ form_end(form) }}
+
+</div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function () {
+        $('select.contributor').select2();
+        $('select.classification').select2();
+    })
+</script>
+{% endblock %}

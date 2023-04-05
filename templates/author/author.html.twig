@@ -1,0 +1,95 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Voltaire Foundation{% endblock %}
+
+{% block body %}
+<div class="content">
+    {# Flashes Messages #}
+    {% include "/_partial/flash.html.twig" %}
+
+    {# Dialog Box Confirm Delete #}
+    {% include "/_partial/confirm.html.twig" with {'value': 'contributor'} %}
+
+
+    {# Search Form By first_name or last_name #}
+    {% include "/_partial/search.html.twig" with {"route":"app_author_clear","action":"/author", "placeholder":"Search
+    by first name or last name"} %}
+    
+    {# <div class="d-flex justify-content-end">
+        {% include "/_partial/search.html.twig" with {"route":"app_author_clear","action":"/author", "placeholder":"Search
+        by first name or last name"} %}
+    </div>
+    <hr> #}
+    {# Page Title + add button #}
+    <div class="d-flex justify-content-between">
+        <h3 class="title">Contributor</h3>
+        <a href="{{path('app_author_new')}}" class="btn btn-primary btn-sm">Add contributor</a>
+    </div>
+
+    {% set var = app.session.get('id' ) %}
+    <span class="var">{{var}}</span>
+
+    {# Table content data #}
+    <table class="table" style="table-layout: fixed;">
+        <thead>
+            <tr>
+                <th style="width:32%; position:relative;">First name
+                    <a href="{{path('app_author', {'order':'ASC', 'column':'first_name'})}}">
+                        <i class='fa fa-chevron-up' style="position: absolute; top:5px; left:90px;"></i></a>
+                    <a href="{{path('app_author', {'order':'DESC', 'column':'first_name'})}}">
+                        <i class='fa fa-chevron-down ' style="position: absolute; top:18px; left:90px;"></i></a>
+                </th>
+                <th style="width:32%; position:relative;">Last name</span>
+                    <a href="{{path('app_author', {'order':'ASC', 'column':'last_name'})}}">
+                        <i class='fa fa-chevron-up' style="position: absolute; top:5px; left:90px;"></i></a>
+                    <a href="{{path('app_author', {'order':'DESC', 'column':'last_name'})}}">
+                        <i class='fa fa-chevron-down' style="position: absolute; top:18px; left:90px;"></i></a>
+                </th>
+                <th style="width:32%;">Authority link</th>
+                <th style="width:4%;"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for author in authors %}
+            <tr class="tr-row-hover">
+                <td data-label="First name" class="border">
+                    {% if author.firstName|length == 0 %}
+                    &nbsp;
+                    {% else %}
+                    {{author.firstName}}
+                    {% endif %}
+                </td>
+                <td data-label="Last name" class="border">
+                    {% if author.lastName|length == 0 %}
+                    &nbsp;
+                    {% else %}
+                    {{author.lastName}}
+                    {% endif %}
+                <td data-label="Authority link" class="border">
+                    {% if author.linkViaf|length == 0 %}
+                    &nbsp;
+                    {% else %}
+                    {{author.linkViaf}}
+                    {% endif %}
+                </td>
+                <td class="border">
+                    <div class="dropdown d-flex justify-content-end">
+                        <button class="dropdown-toggle action" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ...
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="{{path('app_author_edit', {'id':author.id})}}">Edit</a>
+                            <a class="dropdown-item delete-button"
+                                href="{{path('app_author_delete', {'id':author.id})}}">Delete</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {# Pagination #}
+    {{ knp_pagination_render(authors,'paginations/sliding.html.twig') }}
+</div>
+{% endblock %}
