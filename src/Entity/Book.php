@@ -100,6 +100,12 @@ class Book
     #[ORM\Column(nullable: true)]
     private ?int $vol_number = null;
 
+    #[ORM\Column(nullable: true)]
+    private ?int $user_id = null;
+
+    #[ORM\Column(nullable: true)]
+    private ?int $user_update = null;
+
     public function __construct()
     {
         $this->author = new ArrayCollection();
@@ -510,6 +516,30 @@ class Book
     public function setVolNumber(?int $vol_number): self
     {
         $this->vol_number = $vol_number;
+
+        return $this;
+    }
+
+    public function getUserId(): ?int
+    {
+        return $this->user_id;
+    }
+
+    public function setUserId(?int $user_id): self
+    {
+        $this->user_id = $user_id;
+
+        return $this;
+    }
+
+    public function getUserUpdate(): ?int
+    {
+        return $this->user_update;
+    }
+
+    public function setUserUpdate(?int $user_update): self
+    {
+        $this->user_update = $user_update;
 
         return $this;
     }

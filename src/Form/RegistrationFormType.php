@@ -49,6 +49,7 @@ class RegistrationFormType extends AbstractType
                 'required'      => false,
                 'placeholder' => 'Choose a role',
                 'choices' => [
+                    'Supper Admin' => 'SUPPER_ADMIN',
                     'Admin' => 'ROLE_ADMIN',
                     'User' => 'ROLE_USER'
                 ],

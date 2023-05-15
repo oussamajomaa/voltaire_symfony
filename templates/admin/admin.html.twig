@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdminController!{% endblock %}
+{% block body %}
+{% include "/_partial/flash.html.twig" %}
+
+<style>
+    a.btn {
+        width: 300px;
+    }
+</style>
+<div class="container p-5">
+    <div class="m-1">
+        <a class="btn btn-outline-primary" href="{{path('app_admin_insert_book')}}">Update DB_VOLTAIRE</a>
+    </div> 
+
+</div>
+
+
+
+
+{% endblock %}

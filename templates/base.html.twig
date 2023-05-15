@@ -33,6 +33,7 @@
 </style>
 <body>
     {% set route = app.request.attributes.get('_route') %}
+    
     {% if app.user %}
         {% include "navbar.html.twig" %}
     {% endif %}

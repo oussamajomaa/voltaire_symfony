@@ -12,6 +12,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav m-auto mb-2 mb-lg-0">
 				<li class="nav-item">
+					
 					<a
 						{% if "home" in route %}
 						class="nav-link active"
@@ -49,7 +50,15 @@
 						href="{{path('app_user')}}">USER</a>
 				</li>
 				{% endif %}
-				
+				<li class="nav-item">
+					<a
+						{% if "admin" in route %}
+						class="nav-link active"
+						{% else %}
+						class="nav-link"
+						{% endif %}
+						href="{{path('app_admin')}}">SUPPER ADMIN</a>
+				</li>
 
 			</ul>
 			<ul class="navbar-nav  mb-2 mb-lg-0">

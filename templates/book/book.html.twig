@@ -68,22 +68,22 @@
         <tbody>
             {% for book in books %}
             <tr class="tr-row-hover">
-                <td data-label="Title" style="white-space:nowrap;overflow: hidden; " class="border">{{book.title}}</td>
-                <td data-label="Publisher" style="white-space:nowrap;overflow: hidden; " class="border">
+                <td data-label="Title" style="white-space:nowrap;overflow: hidden; " class="bg-light">{{book.title}}</td>
+                <td data-label="Publisher" style="white-space:nowrap;overflow: hidden; " class="">
                     {% if book.publisher|length == 0 %}
                     &nbsp;
                     {% else %}
                     {{book.publisher}}
                     {% endif %}
                 </td>
-                <td data-label="Publication place" style="white-space:nowrap;overflow: hidden; " class="border">
+                <td data-label="Publication place" style="white-space:nowrap;overflow: hidden; " class="bg-light">
                     {% if book.publicationPlace|length == 0 %}
                     &nbsp;
                     {% else %}
                     {{book.publicationPlace}}
                     {% endif %}
                 </td>
-                <td data-label="Publication date" style="white-space:nowrap;overflow: hidden;  " class="border">
+                <td data-label="Publication date" style="white-space:nowrap;overflow: hidden;  " class="">
                     {% if book.publicationDate|length == 0 %}
                     &nbsp;
                     {% else %}
@@ -91,14 +91,14 @@
                     {% endif %}
                 </td>
                
-                <td data-label="Source" style="white-space:nowrap;overflow: hidden; " class="border">
+                <td data-label="Source" style="white-space:nowrap;overflow: hidden; " class="bg-light">
                     {% if book.source|length == 0 %}
                     &nbsp;
                     {% else %}
                     {{book.source}}
                     {% endif %}
                 </td>
-                <td data-label="Classification" style="white-space:nowrap;overflow: hidden; " class="border">
+                <td data-label="Classification" style="white-space:nowrap;overflow: hidden; " class="">
                     {% if book.classification|length == 0 %}
                     &nbsp;
                     {% else %}
@@ -109,14 +109,14 @@
 
                     {% endif %}
                 </td>
-                <td data-label="Notes" style="white-space:nowrap;overflow: hidden; " class="border">
+                <td data-label="Notes" style="white-space:nowrap;overflow: hidden; " class="bg-light">
                     {% if book.notes|length == 0 %}
                     &nbsp;
                     {% else %}
                     {{book.notes}}
                     {% endif %}
                 </td>
-                <td class="action-button border">
+                <td class="action-button ">
                     <div class="dropdown d-flex justify-content-end">
                         <button class="dropdown-toggle action" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -136,25 +136,26 @@
     </table>
     {# Pagination #}
     {{ knp_pagination_render(books,'paginations/sliding.html.twig') }}
+    
 </div>
 
 </div>
 
 <script>
-    let classification = document.getElementById('classification')
-    let title_source_notes = document.getElementById('title_source_notes')
-    classification.addEventListener('click', function(){
+    // let classification = document.getElementById('classification')
+    // let title_source_notes = document.getElementById('title_source_notes')
+    // classification.addEventListener('click', function(){
         
-            document.getElementById('search_classification').style.display='inline'
-            document.getElementById('search_title').style.display='none'
+    //         document.getElementById('search_classification').style.display='inline'
+    //         document.getElementById('search_title').style.display='none'
         
-    })
-    title_source_notes.addEventListener('click', function(){
+    // })
+    // title_source_notes.addEventListener('click', function(){
         
-            document.getElementById('search_classification').style.display='none'
-            document.getElementById('search_title').style.display='inline'
+    //         document.getElementById('search_classification').style.display='none'
+    //         document.getElementById('search_title').style.display='inline'
        
-    })
+    // })
    
 </script>
 
